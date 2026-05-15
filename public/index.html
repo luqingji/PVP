@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#1a1a2e" />
+    <meta
+      name="description"
+      content="数据精灵：PvP - 在线宠物养成与回合对战游戏，捕捉、训练、进化你的数字精灵，与全世界的驯兽师实时对战！"
+    />
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      注意：GitHub Pages 部署时，%PUBLIC_URL% 会被 Create React App 自动替换为 homepage 中的值，
+      即 https://luqingji.github.io/PVP，确保所有资源路径正确。
+    -->
+    <title>数据精灵：PvP</title>
+    <!-- 预加载关键字体（可选） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <!-- 全局基础样式，防止页面出现多余滚动条或留白 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html, body, #root {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #0f0f23;
+        font-family: 'Press Start 2P', cursive, sans-serif;
+      }
+      /* 当 Phaser 画布全屏时，确保 root 容器允许它填充 */
+      #root {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>你需要启用 JavaScript 才能运行“数据精灵：PvP”。</noscript>
+    <div id="root"></div>
+    <!--
+      React 会在此挂载整个应用，包括 Phaser 游戏画布。
+      战斗场景的 Canvas 将由 React 组件动态插入，无需在 HTML 中预置。
+    -->
+  </body>
+</html>
